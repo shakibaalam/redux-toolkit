@@ -1,3 +1,27 @@
+section {
+  display: grid;
+  grid-gap: 0.5rem;
+  padding: 1rem;
+}
+
+article {
+  background-color: #293462;
+  color: white;
+  padding: 0.5rem;
+}
+
+@media (min-width:600px) {
+  section {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (min-width:768px) {
+  section {
+    grid-template-columns: auto auto auto;
+  }
+}
+
 .App {
   text-align: center;
 }
@@ -32,6 +56,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
